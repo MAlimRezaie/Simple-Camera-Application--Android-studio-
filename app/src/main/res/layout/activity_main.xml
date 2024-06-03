@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Click on the camera button to start the Camera!"
+        />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:text="Camera" />
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/toggleButton"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCamera"
+        android:src="@drawable/power_off"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"/>
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:layout_below="@+id/toggleButton"/>
+
+</RelativeLayout>
